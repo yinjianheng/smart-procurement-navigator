@@ -1,106 +1,119 @@
-# 智慧招采通（Smart Procurement Navigator）
+# 🏛️ 智慧招采通 Smart Procurement Navigator v2.0.0
 
-> 版本：2.0.0
-> 当前目标：贯通"上传采购文件/技术规范 -> 构建评审模型 -> 输出应答方案架构 -> 产出章节初稿 -> 完成合规审查"的全链路闭环。
+[![Version](https://img.shields.io/badge/version-2.0.0-blue)](https://github.com/yinjianheng/smart-procurement-navigator)
+[![License](https://img.shields.io/badge/license-Personal%20Use%20Only-red)](./LICENSE)
+[![Author](https://img.shields.io/badge/author-yinjianheng-orange)](https://github.com/yinjianheng)
+[![Platform](https://img.shields.io/badge/platform-WuKong%20%7C%20Claude%20%7C%20OpenClaw-brightgreen)](https://github.com/yinjianheng)
 
-## 1. 系统定位
+> **AI 招投标全流程智能助手 | 商机甄别 → 投标研判 → 标书编制 → 合规审查 | 12 大环节一站式闭环**
+>
+> 深度适配《中华人民共和国招标投标法》《中华人民共和国政府采购法》框架，覆盖政府采购、工程建设、服务类项目全场景。
 
-智慧招采通是面向市场、商务、方案、标书编制和经营决策层的智能招采协作系统。它贯穿从商机研判、评审建模、应答架构设计、章节写作到呈交前质量把关的完整业务链路，适配《中华人民共和国政府采购法》及《中华人民共和国招标投标法》框架下的各类采招项目。
+---
 
-| 能力模块 | 目标 |
-| --- | --- |
-| 商机甄别 | 接收采购公告或信息源，输出商机摘要和关键时间节点预警 |
-| 投标研判 | 评估资质条件、业绩、预算、交付能力与竞争风险 |
-| 采购文件解读 | 提炼资格门槛、评审办法、呈交规范、否决条款 |
-| 资料结构化处理 | 将采购文件、技术规范、参考文件和知识库转为可检索文本 |
-| 评审模型构建 | 区分否决性条款、评分项、客观分材料和应答章节映射 |
-| 应标任务分解 | 输出资料清单、责任人、截止时间和协作节点 |
-| 应答方案架构设计 | 输出前置索引表、完整章节目录、章节锚点和篇幅规划 |
-| 应答文稿生成 | 根据评审项、技术规范和知识库产出章节初稿 |
-| 文稿润色与可视化增强 | 清除模板化表达、内部策略词，并输出图表占位索引 |
-| 合规性审查 | 检查缺项、格式、偏离、关键数据、参考残留和否决风险 |
-| 呈交终审 | 提交前最终一致性校验与签章核查 |
-| 经验沉淀与知识复用 | 提炼中标/未中标根因，沉淀可复用素材和策略 |
+## 🎯 为什么选择智慧招采通？
 
-## 2. 文件结构
+| 痛点 | 智慧招采通的解决方案 |
+|------|---------------------|
+| 📄 采购文件几百页，关键信息难提取 | **智能解读**：自动提炼资格门槛、评审办法、否决条款 |
+| 📊 评分标准复杂，不知道如何分配精力 | **评审模型构建**：区分否决项/评分项，输出应答章节映射 |
+| ✍️ 标书编写耗时数周，质量参差不齐 | **AI 辅助写作**：根据评审要项产出章节初稿，消除模板化表达 |
+| ⚠️ 废标风险高，一次疏忽满盘皆输 | **合规审查**：30+ 常见废标原因自动检测，呈交前终审放行 |
+| 📅 时间节点多，容易错过关键截止 | **时间预警**：20+ 关键时间节点自动提醒 |
 
-```text
+---
+
+## 🚀 核心能力矩阵
+
+| 序号 | 环节 | 能力 | 输出 |
+|------|------|------|------|
+| 1 | 🎯 商机甄别 | 采购公告智能解析 | 商机摘要 + 时间节点预警 |
+| 2 | 📋 投标研判 | 资质/业绩/预算/竞争四维评估 | 投标可行性报告 |
+| 3 | 🔍 文件解读 | 资格门槛/评审办法/否决条款提取 | 结构化解读报告 |
+| 4 | 🗂️ 资料结构化 | 采购文件→可检索文本 | 结构化知识库 |
+| 5 | 📊 评审建模 | 否决项 vs 评分项 vs 客观分 | 评审计分模型 + 应答映射 |
+| 6 | 📝 任务分解 | 资料清单 + 责任人 + 截止时间 | 应标任务清单 |
+| 7 | 🏗️ 架构设计 | 前置索引 + 章节目录 + 篇幅规划 | 应答方案架构 |
+| 8 | ✍️ 文稿生成 | 按评审项 + 技术规范产出 | 章节初稿 |
+| 9 | 🎨 润色增强 | 去模板化 + 图表占位索引 | 润色后文稿 |
+| 10 | ✅ 合规审查 | 缺项/格式/偏离/否决风险 | 合规审查报告 |
+| 11 | 🔒 呈交终审 | 一致性校验 + 签章核查 | 终审放行单 |
+| 12 | 📚 经验沉淀 | 中标/未中标根因分析 | 可复用素材库 |
+
+---
+
+## 📦 快速开始
+
+```bash
+# 安装到 WuKong / Claude / OpenClaw
+cp -r smart-procurement-navigator ~/.claude/skills/
+
+# 触发方式：直接描述需求
+"帮我分析这份政府采购公告"
+"这份招标文件的资格门槛是什么？"
+"按评审标准生成应答方案架构"
+"做一次标书合规审查"
+```
+
+---
+
+## 🏆 特色亮点
+
+- **法律合规深度**：内置《招标投标法》《政府采购法》及实施条例、2024 国办发 21 号文、2025 远程异地评标新规
+- **评标方法全覆盖**：综合评分法（固定分值/区间赋分/排序赋分）+ 价格分异常识别
+- **电子招投标适配**：远程异地评标主场/副场机制、电子签章 CA 互认
+- **废标规避**：30+ 常见废标原因及规避策略
+- **救济机制**：质疑→投诉→复议三级（7→15→60 日时限）
+- **中小企业优惠**：联合体投标、资格预审 vs 资格后审、双信封制
+
+---
+
+## 📁 文件结构
+
+```
 smart-procurement-navigator/
-  README.md
-  agent.yaml
-  system_prompt.md
-  workflows.md
-  runbook.md
-  skills/
-    procurement_skills.yaml
-  knowledge/
-    README.md
-  templates/
-    opportunity_brief.md
-    tender_analysis_report.md
-    score_model.md
-    response_outline.md
-    service_scheme_structure.md
-    review_report.md
-    consistency_check_report.md
-  test_cases/
-    p0_demo_cases.md
-  demo/
-    demo_script.md
+├── SKILL.md                    # 核心技能文件（777 行）
+├── README.md                   # 本文件
+├── agent.yaml / system_prompt.md / workflows.md / runbook.md
+├── skills/procurement_skills.yaml
+├── knowledge/README.md
+├── templates/                  # 7 个专业模板
+│   ├── opportunity_brief.md    # 商机摘要
+│   ├── tender_analysis_report.md # 招标分析报告
+│   ├── score_model.md          # 评审模型
+│   ├── response_outline.md     # 应答大纲
+│   ├── service_scheme_structure.md # 服务方案结构
+│   ├── review_report.md        # 审查报告
+│   └── consistency_check_report.md # 一致性检查
+├── test_cases/p0_demo_cases.md
+└── demo/demo_script.md
 ```
 
-## 3. 核心闭环
+---
 
-```text
-用户上传采购公告或采购文件
-  -> 识别项目基本信息
-  -> 提炼资格门槛和评审标准
-  -> 构建评审计分模型和无偏离索引
-  -> 输出应标任务清单
-  -> 输出应答方案完整章节结构和章节初稿
-  -> 输出文稿润色和合规审查意见
-  -> 输出呈交前终审放行单
-```
+## 🔗 相关 Skill
 
-## 4. 关键边界
+| Skill | 定位 | 仓库 |
+|-------|------|------|
+| [sa-pro-workbench](https://github.com/yinjianheng/sa-pro-workbench) | 解决方案架构师工作台 | 方案设计 · 架构图 · 投标 |
+| [ba-workbench](https://github.com/yinjianheng/ba-workbench) | 商业分析工作台 | 战略分析 · 财务建模 · 商业论证 |
+| [it-consulting-workbench](https://github.com/yinjianheng/it-consulting-workbench) | IT 咨询顾问工作台 | IT 战略 · 数字化转型 · 技术尽调 |
 
-- 该系统可产出分析报告、清单、目录、初稿和审查意见。
-- 该系统不可替代投标决策人做出最终应标决策。
-- 报价、承诺、签章、资质真实性核验、最终应答文件必须经人工确认。
-- 涉及客户称谓、金额、资质、过往业绩时，须按权限展示和归档。
-- 正式应答文件中不可保留内部评审策略表述、夸张措辞和参考项目残留。
-- 遵循《中华人民共和国政府采购法》中关于公平竞争和信息公开的规定。
+> 💡 **国际版**：[smart-procurement-navigator-international](https://github.com/yinjianheng/smart-procurement-navigator-international) — Dual-track China + Global bidding AI assistant
 
+---
 
-## v2.0.0 新增内容（2026-06-16）
+## 📄 许可证
 
-### 法律法规体系
-- 《中华人民共和国招标投标法》及实施条例
-- 《中华人民共和国政府采购法》及实施条例
-- 2024国办发21号文《关于创新完善体制机制推动招标投标市场规范健康发展的意见》
-- 2025远程异地评标新规
+**温馨提示**：本 Skill 为个人开源作品，仅供个人学习、研究及非商业用途。未经作者书面授权，严禁任何形式的商业使用（包括但不限于转售、捆绑销售、商业培训、SaaS化服务等）。作者已委托专业知识产权律师团队进行全网监测，侵权必究。
 
-### 全流程7大阶段详解
-招标→投标→开标→评标→定标→签约→履约
+---
 
-### 评标方法体系
-- 综合评分法三种做法（固定分值法、区间赋分法、排序赋分法）
-- 合规分析
-- 价格分异常识别与应对策略
-
-### 电子招投标平台适配
-- 远程异地评标主场/副场机制
-- 电子签章CA互认
-- 远程异地评标专家抽取规则
-
-### 投标文件编制深度指南
-- 商务标/技术标/价格标分册编写规范
-- 常见废标原因及规避策略（30+）
-
-### 救济机制
-- 质疑/异议/投诉三级（7→15→60日时限）
-- 中小企业优惠政策
-- 联合体投标规范
-- 资格预审vs资格后审
-- 双信封制流程
-- 20+关键时间节点汇总
+<p align="center">
+  <b>👨‍💻 yinjianheng（殷健恒）</b> &nbsp;|&nbsp;
+  📧 yinjianheng@foxmail.com &nbsp;|&nbsp;
+  💬 WeChat: YJH-yinjianheng
+</p>
+<p align="center">
+  <sub>⭐ 如果这个 Skill 帮到了你，请给个 Star 让更多人看到！</sub>
+</p>
